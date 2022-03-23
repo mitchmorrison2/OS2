@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/Mitchellmorrison/CLionProjects/OS2/Queue.cpp
+Queue.h
+/Users/Mitchellmorrison/CLionProjects/OS2/Queue.h
+limits.h
+-
+stdio.h
+-
+pthread.h
+-
+iostream
+-
+stdlib.h
+-
+
+/Users/Mitchellmorrison/CLionProjects/OS2/Queue.h
+

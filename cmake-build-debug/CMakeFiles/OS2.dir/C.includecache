@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/Mitchellmorrison/CLionProjects/OS2/Queue.h
+
+/Users/Mitchellmorrison/CLionProjects/OS2/stage1.c
+time.h
+-
+stdio.h
+-
+unistd.h
+-
+pthread.h
+-
+stdlib.h
+-
+Queue.h
+/Users/Mitchellmorrison/CLionProjects/OS2/Queue.h
+stage1.h
+/Users/Mitchellmorrison/CLionProjects/OS2/stage1.h
+
+/Users/Mitchellmorrison/CLionProjects/OS2/stage1.h
+
