@@ -14,7 +14,6 @@
     int dequeue(struct Queue* );
     int front(struct Queue* );
     int rear(struct Queue* );
-//    char* printQueue(struct Queue* );
 
     struct Queue {
         int front, rear, size;

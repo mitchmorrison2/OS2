@@ -1,12 +1,20 @@
-////#include <iostream>
+///*
+// *
+// * Mitchell Morrison
+// * Project 2
+// * Base Case
+// * March 23, 2022
+// *
+// */
+//
+//
 //#include <time.h>
 //#include <stdio.h>
 //#include <unistd.h>
+//#include <stdlib.h>
 //#include <pthread.h>
 //#include "Queue.h"
-//#include "stage1.h"
 //
-////using namespace std;
 //
 //int game = 0;
 //int finished = 0;
@@ -21,12 +29,12 @@
 //int NUM_THREADS;
 //int QUEUE_SIZE;
 //int TARGET_SCORE;
+//FILE* fpWrite;
+//char temp[500] = "";
 //
 //char* printQueue(struct Queue* q) {
-//    pthread_mutex_lock(&lockPrint);
 //
-//    char temp[100] = "";
-////    printf("%d %d\n", q->front, q->rear);
+//    sprintf(temp, "");
 //    if (getSize(q)) {
 //        if (q->rear < q->front) {
 //            for (int i = q->front; i < QUEUE_SIZE; i++) {
@@ -42,7 +50,7 @@
 //            }
 //        }
 //    }
-//    pthread_mutex_unlock(&lockPrint);
+//
 //
 //    return temp;
 //}
@@ -57,7 +65,8 @@
 //            if (finished) break;
 //            int v = dequeue(dealerQueue);
 //            if (v > -1) {
-//                printf("Player %d delete %d: %s\n", index, v, printQueue(dealerQueue));
+//                pthread_mutex_lock(&lockPrint);
+//                fprintf(fpWrite ,"Player %d delete %d : %s\n", index, v, printQueue(dealerQueue));
 //                if ((turnCount[index] + 1) % 5 != 0) {
 //                    sums[index] += v;
 //                }
@@ -65,31 +74,32 @@
 //                    sums[index] -= v;
 //                    if (getSize(dealerQueue) != QUEUE_SIZE) {
 //                        enqueue(dealerQueue, v);
-//                        printf("Player %d insert %d: %s\n", index, v, printQueue(dealerQueue));
+//                        fprintf(fpWrite ,"Player %d insert %d : %s\n", index, v, printQueue(dealerQueue));
 //                    }
 //                }
-//                printf("Player %d score: %d\n", index, sums[index]);
+//                fprintf(fpWrite ,"Player %d score : %d\n", index, sums[index]);
 //                turnCount[index]++;
 //
 //                if (sums[index] >= TARGET_SCORE) {
 //                    if (winners[0] == -1) {
 //                        winners[0] = index;
-//                        printf("%d reaches the target score: %d %d\n", winners[0], sums[index], TARGET_SCORE);
+//                        fprintf(fpWrite ,"Player %d reaches the target score : %d (%d)\n", winners[0], sums[index], TARGET_SCORE);
 //                    }
 //                    else if (winners[1] == -1) {
 //                        winners[1] = index;
-//                        printf("%d reaches the target score: %d %d\n", winners[1], sums[index], TARGET_SCORE);
+//                        fprintf(fpWrite ,"Player %d reaches the target score : %d (%d)\n", winners[1], sums[index], TARGET_SCORE);
 //                        finished = 1;
 //                    }
 //                    else {
-//                        printf("MUTEX MUST NOT BE WORKING BC GAME SHOULD STOP BEFORE HERE");
+//                        fprintf(fpWrite ,"MUTEX MUST NOT BE WORKING BC GAME SHOULD STOP BEFORE HERE");
 //                    }
 //                }
+//                pthread_mutex_unlock(&lockPrint);
 //            }
 //            pthread_mutex_unlock(&lockQueue);
 //            struct timespec remaining, request = {1, v};
 //            if (v > -1 && nanosleep(&request, &remaining) == -1) {
-//                printf("NANOSLEEP ERROR WAITING FOR NEXT CHANCE TO GRAB\n");
+//                fprintf(fpWrite ,"NANOSLEEP ERROR WAITING FOR NEXT CHANCE TO GRAB\n");
 //            }
 //        }
 //
@@ -97,38 +107,39 @@
 //
 //    pthread_exit(0);
 //
-//
 //}
 //
-//int insertToHalfFull(struct Queue* q, int QUEUE_SIZE) {
+//int insertToHalfFull(struct Queue* q) {
 //    while (getSize(q) * 2 < QUEUE_SIZE) {
 //        int r = rand() % 10 + 1;
-//        pthread_mutex_lock(&lockQueue);
 //        enqueue(q, r);
-//        pthread_mutex_unlock(&lockQueue);
-//        printf("Dealer insert %d: %s\n", r, printQueue(dealerQueue));
+//        fprintf(fpWrite ,"Dealer insert %d : %s\n", r, printQueue(dealerQueue));
 //    }
 //
-//    printf("%d\n", getSize(q));
 //    return 1;
 //}
 //
 //
 //int main(int argc, char** argv) {
-////    cout << argc;
 //
 //    NUM_THREADS = atoi(argv[1]);
 //    QUEUE_SIZE = atoi(argv[2]);
 //    TARGET_SCORE = atoi(argv[3]);
-//    printf("%d %d %d\n", NUM_THREADS, QUEUE_SIZE, TARGET_SCORE);
-////    cout << NUM_THREADS << " " << QUEUE_SIZE << " " << TARGET_SCORE << endl;
 //
+//    char outputFile[25] = "base_output.txt";
+//    fpWrite = fopen(outputFile, "w+");
+//    if (fpWrite) {
+////        printf("%s \n", "output file");
+//    }
+//    else {
+//        printf("Not opening");
+//    }
 //    // initialize threads and attributes
 //    pthread_t tid[NUM_THREADS]; //make this an array of size numThreads
 //    pthread_attr_t attr;
 //    pthread_attr_init(&attr);
 //
-//    // allocate space for global variables
+//    // allocate space fore global variables
 //    sums = (int*)malloc(sizeof(int)*NUM_THREADS);
 //    turnCount = (int*)malloc(sizeof(int)*NUM_THREADS);
 //
@@ -140,17 +151,16 @@
 //
 //    //create each thread and store file contents in global
 //    for (int i = 0; i < NUM_THREADS; i++) {
-////        fscanf(fp, "%d %d %d %d", &values[i][0], &values[i][1], &values[i][2], &values[i][3]);
 //        int* x = (int*) malloc(sizeof(int));
 //        *x = i;
 //        pthread_create(&(tid[i]), &attr, &runner, (void *) x);
 //    }
 //
 //    dealerQueue = createQueue(QUEUE_SIZE);
-//    insertToHalfFull(dealerQueue, QUEUE_SIZE);
+//    insertToHalfFull(dealerQueue);
 //    int x = pthread_mutex_init(&lockPrint, NULL) != 0;
 //    if (pthread_mutex_init(&lockQueue, NULL) != 0) {
-//        printf("\n mutex init has failed\n");
+//        fprintf(fpWrite ,"\n mutex init has failed\n");
 //        return 1;
 //    }
 //    // start threads ability to play game
@@ -159,10 +169,13 @@
 //    while(!finished) {
 //        int r = rand() % 10 + 1;
 //        if (getSize(dealerQueue) < QUEUE_SIZE) {
-////            pthread_mutex_lock(&lockQueue);
+//            pthread_mutex_lock(&lockQueue);
 //            enqueue(dealerQueue, r);
-////            pthread_mutex_unlock(&lockQueue);
-//            printf("Dealer insert %d: %s\n", r, printQueue(dealerQueue));
+//            pthread_mutex_unlock(&lockQueue);
+//
+//            pthread_mutex_lock(&lockPrint);
+//            fprintf(fpWrite ,"Dealer insert %d : %s\n", r, printQueue(dealerQueue));
+//            pthread_mutex_unlock(&lockPrint);
 //        }
 //        else {
 //            struct timespec remaining, request = {1, r};
@@ -173,8 +186,12 @@
 //        if (winners[0] != -1 && winners[1] != -1) {
 //            // if 2 winners exist, end game
 //            finished = 1;
-//            printf("End of game detected\n");
-//            printf("Winner Player %d with score %d. Runner up Player %d with score %d", winners[0], sums[winners[0]], winners[1], sums[winners[1]]);
+//
+//            pthread_mutex_lock(&lockPrint);
+//            fprintf(fpWrite ,"End of game detected\n");
+//            fprintf(fpWrite ,"Winner Player %d with score %d. Runner up Player %d with score %d", winners[0], sums[winners[0]], winners[1], sums[winners[1]]);
+//            pthread_mutex_unlock(&lockPrint);
+//
 //            break;
 //        }
 //    }

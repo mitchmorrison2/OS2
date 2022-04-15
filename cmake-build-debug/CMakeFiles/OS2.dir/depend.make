@@ -6,7 +6,8 @@ CMakeFiles/OS2.dir/Queue.c.o: ../Queue.h
 
 CMakeFiles/OS2.dir/base.c.o: ../base.c
 
-CMakeFiles/OS2.dir/stage1.c.o: ../Queue.h
 CMakeFiles/OS2.dir/stage1.c.o: ../stage1.c
-CMakeFiles/OS2.dir/stage1.c.o: ../stage1.h
+
+CMakeFiles/OS2.dir/stage2.c.o: ../Queue.h
+CMakeFiles/OS2.dir/stage2.c.o: ../stage2.c
 

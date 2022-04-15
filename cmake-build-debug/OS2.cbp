@@ -92,7 +92,7 @@
 		<Unit filename="/Users/Mitchellmorrison/CLionProjects/OS2/stage1.c">
 			<Option target="OS2"/>
 		</Unit>
-		<Unit filename="/Users/Mitchellmorrison/CLionProjects/OS2/stage1.h">
+		<Unit filename="/Users/Mitchellmorrison/CLionProjects/OS2/stage2.c">
 			<Option target="OS2"/>
 		</Unit>
 		<Unit filename="/Users/Mitchellmorrison/CLionProjects/OS2/CMakeLists.txt">

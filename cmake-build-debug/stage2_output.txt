@@ -1,0 +1,64 @@
+Billy delete 30:  41 13 20 10 8
+Billy score: 40
+Killy delete 41:  13 20 10 8
+Killy score: 41
+Jilly delete 13:  20 10 8
+Jilly score: 37
+ealer insert 31 :  8 50 24 9 31
+Dealer insert 23 :  8 50 24 9 31 23
+Dealer insert 45 :  8 50 24 9 31 23 45
+Dealer insert 29 :  8 50 24 9 31 23 45 29
+Dealer insert 24 :  8 50 24 9 31 23 45 29 24
+Dealer insert 10 :  8 50 24 9 31 23 45 29 24 10
+Silly delete 8:  50 24 9 31 23 45 29 24 10
+Silly score: 8
+Tilly delete 50:  24 9 31 23 45 29 24 10
+Tilly score: 50
+Tilly reaches the target score: 50 (50)
+Billy delete 24:  9 31 23 45 29 24 10
+Billy score: 24
+Tammy delete 9:  31 23 45 29 24 10
+Tammy score: 9
+Jammy delete 31:  23 45 29 24 10
+Jammy score: 31
+End of game 0 detected
+New game: Jilly replacing Tilly in slot 1
+Billy delete 23:  45 29 24 10
+Billy score: 35
+Tammy delete 45:  29 24 10
+Tammy score: 49
+Silly delete 29:  24 10
+Silly score: 33
+Jammy delete 24:  10
+Jammy score: 39
+Dealer insert 16 :  10 16
+Dealer insert 43 :  10 16 43
+Dealer insert 43 :  10 16 43 43
+Dealer insert 38 :  10 16 43 43 38
+Dealer insert 4 :  10 16 43 43 38 4
+Dealer insert 28 :  10 16 43 43 38 4 28
+Dealer insert 30 :  10 16 43 43 38 4 28 30
+Dealer insert 41 :  10 16 43 43 38 4 28 30 41
+Dealer insert 13 :  10 16 43 43 38 4 28 30 41 13
+Jilly delete 10:  16 43 43 38 4 28 30 41 13
+Jilly score: 10
+Tammy delete 16:  43 43 38 4 28 30 41 13
+Tammy score: 65
+Tammy reaches the target score: 65 (50)
+End of game 1 detected
+New game: Killy replacing Tammy in slot 2
+Jammy delete 43:  43 38 4 28 30 41 13
+Jammy score: 82
+Dealer insert 20 :  43 38 4 28 30 41 13 20
+Dealer insert 10 :  43 38 4 28 30 41 13 20 10
+Dealer insert 8 :  43 38 4 28 30 41 13 20 10 8
+Jilly delete 43:  38 4 28 30 41 13 20 10 8
+Jilly score: 48
+Silly delete 38:  4 28 30 41 13 20 10 8
+Silly score: 54
+Silly reaches the target score: 54 (50)
+Billy delete 4:  28 30 41 13 20 10 8
+Billy score: 21
+Jammy delete 28:  30 41 13 20 10 8
+Jammy score: 69
+End of game 2 detected

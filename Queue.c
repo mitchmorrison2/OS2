@@ -1,5 +1,8 @@
 //
-// Created by Mitchell Morrison on 3/14/22.
+// Mitchell Morrison
+//
+// Sourced from GeeksForGeeks
+// https://www.geeksforgeeks.org/queue-set-1introduction-and-array-implementation/
 //
 
 #include "Queue.h"

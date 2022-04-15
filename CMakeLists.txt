@@ -3,4 +3,4 @@ project(OS2)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(OS2 base.c stage1.c stage1.h Queue.c Queue.h)
+add_executable(OS2 base.c stage1.c stage2.c Queue.c Queue.h)

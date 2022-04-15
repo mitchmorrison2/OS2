@@ -8,12 +8,10 @@
 
 /Users/Mitchellmorrison/CLionProjects/OS2/Queue.h
 
-/Users/Mitchellmorrison/CLionProjects/OS2/stage1.c
+/Users/Mitchellmorrison/CLionProjects/OS2/stage2.c
 time.h
 -
 stdio.h
--
-unistd.h
 -
 pthread.h
 -
@@ -21,8 +19,4 @@ stdlib.h
 -
 Queue.h
 /Users/Mitchellmorrison/CLionProjects/OS2/Queue.h
-stage1.h
-/Users/Mitchellmorrison/CLionProjects/OS2/stage1.h
-
-/Users/Mitchellmorrison/CLionProjects/OS2/stage1.h
 

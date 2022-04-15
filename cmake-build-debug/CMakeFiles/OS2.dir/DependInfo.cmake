@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/Mitchellmorrison/CLionProjects/OS2/Queue.c" "/Users/Mitchellmorrison/CLionProjects/OS2/cmake-build-debug/CMakeFiles/OS2.dir/Queue.c.o"
   "/Users/Mitchellmorrison/CLionProjects/OS2/base.c" "/Users/Mitchellmorrison/CLionProjects/OS2/cmake-build-debug/CMakeFiles/OS2.dir/base.c.o"
   "/Users/Mitchellmorrison/CLionProjects/OS2/stage1.c" "/Users/Mitchellmorrison/CLionProjects/OS2/cmake-build-debug/CMakeFiles/OS2.dir/stage1.c.o"
+  "/Users/Mitchellmorrison/CLionProjects/OS2/stage2.c" "/Users/Mitchellmorrison/CLionProjects/OS2/cmake-build-debug/CMakeFiles/OS2.dir/stage2.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

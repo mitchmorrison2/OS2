@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/OS2.dir/Queue.c.o"
   "CMakeFiles/OS2.dir/base.c.o"
   "CMakeFiles/OS2.dir/stage1.c.o"
+  "CMakeFiles/OS2.dir/stage2.c.o"
   "OS2"
   "OS2.pdb"
 )

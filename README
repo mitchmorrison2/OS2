@@ -1,0 +1,13 @@
+Program 2 for Mitchell Morrison
+
+TO RUN EACH STAGE:
+
+Comment out the code in each other source file other than Queue.h and Queue.c.
+
+Since there is multiple c files with a main function, unless the main in the other files are commented out there is a linking error.
+
+Ex. Run base.c normally passing in command line args once code in stage1.c and stage2.c are commented out.
+
+Do the same for stage1.c and stage2.c when you are trying to run them.
+
+I have precommented out stage1.c and stage2.c for you since I expect you will run base.c first.

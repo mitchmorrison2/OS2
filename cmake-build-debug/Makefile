@@ -204,6 +204,33 @@ stage1.c.s:
 	$(MAKE) -f CMakeFiles/OS2.dir/build.make CMakeFiles/OS2.dir/stage1.c.s
 .PHONY : stage1.c.s
 
+stage2.o: stage2.c.o
+
+.PHONY : stage2.o
+
+# target to build an object file
+stage2.c.o:
+	$(MAKE) -f CMakeFiles/OS2.dir/build.make CMakeFiles/OS2.dir/stage2.c.o
+.PHONY : stage2.c.o
+
+stage2.i: stage2.c.i
+
+.PHONY : stage2.i
+
+# target to preprocess a source file
+stage2.c.i:
+	$(MAKE) -f CMakeFiles/OS2.dir/build.make CMakeFiles/OS2.dir/stage2.c.i
+.PHONY : stage2.c.i
+
+stage2.s: stage2.c.s
+
+.PHONY : stage2.s
+
+# target to generate assembly for a file
+stage2.c.s:
+	$(MAKE) -f CMakeFiles/OS2.dir/build.make CMakeFiles/OS2.dir/stage2.c.s
+.PHONY : stage2.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -222,6 +249,9 @@ help:
 	@echo "... stage1.o"
 	@echo "... stage1.i"
 	@echo "... stage1.s"
+	@echo "... stage2.o"
+	@echo "... stage2.i"
+	@echo "... stage2.s"
 .PHONY : help
 
 

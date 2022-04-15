@@ -1,4 +1,4 @@
-5 10 20 8
+5 10 50 7
 Billy
 Tilly
 Tammy
@@ -6,4 +6,3 @@ Jammy
 Silly
 Jilly
 Killy
-Spammy

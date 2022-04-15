@@ -1,0 +1,91 @@
+Billy delete 17:  36 27 13 18 34
+Billy score: 17
+Silly delete 36:  27 13 18 34
+Silly score: 36
+ 50 24
+Dealer insert 9:  8 50 24 9
+Dealer insert 31:  8 50 24 9 31
+Dealer insert 23:  8 50 24 9 31 23
+Dealer insert 45:  8 50 24 9 31 23 45
+Silly delete 8:  50 24 9 31 23 45
+Silly score: 8
+Tilly delete 50:  24 9 31 23 45
+Tilly score: 50
+Tilly reaches the target score: 50 (50)
+Jammy delete 24:  9 31 23 45
+Jammy score: 24
+Billy delete 9:  31 23 45
+Billy score: 9
+Dealer insert 29:  31 23 45 29
+End of game 0 detected
+Winner Tilly with score 50
+New game: Jilly replacing Tilly in slot 1
+Dealer delete 31:  23 45 29
+Dealer delete 23:  45 29
+Dealer delete 45:  29
+Dealer delete 29: 
+Dealer insert 24:  24
+Dealer insert 10:  24 10
+Dealer insert 41:  24 10 41
+Dealer insert 16:  24 10 41 16
+Dealer insert 43:  24 10 41 16 43
+Dealer insert 43:  24 10 41 16 43 43
+Dealer insert 38:  24 10 41 16 43 43 38
+Dealer insert 4:  24 10 41 16 43 43 38 4
+Dealer insert 28:  24 10 41 16 43 43 38 4 28
+Dealer insert 30:  24 10 41 16 43 43 38 4 28 30
+Tammy delete 24:  10 41 16 43 43 38 4 28 30
+Tammy score: 24
+Billy delete 10:  41 16 43 43 38 4 28 30
+Billy score: 10
+Silly delete 41:  16 43 43 38 4 28 30
+Silly score: 41
+Jammy delete 16:  43 43 38 4 28 30
+Jammy score: 16
+Jilly delete 43:  43 38 4 28 30
+Jilly score: 43
+Tammy delete 43:  38 4 28 30
+Tammy score: 67
+Tammy reaches the target score: 67 (50)
+Dealer insert 13:  38 4 28 30 13
+End of game 1 detected
+Winner Tammy with score 67
+New game: Killy replacing Tammy in slot 2
+Dealer delete 38:  4 28 30 13
+Dealer delete 4:  28 30 13
+Dealer delete 28:  30 13
+Dealer delete 30:  13
+Dealer delete 13: 
+Dealer insert 4:  4
+Dealer insert 20:  4 20
+Dealer insert 10:  4 20 10
+Dealer insert 8:  4 20 10 8
+Dealer insert 11:  4 20 10 8 11
+Dealer insert 34:  4 20 10 8 11 34
+Dealer insert 50:  4 20 10 8 11 34 50
+Dealer insert 29:  4 20 10 8 11 34 50 29
+Dealer insert 17:  4 20 10 8 11 34 50 29 17
+Dealer insert 36:  4 20 10 8 11 34 50 29 17 36
+Silly delete 4:  20 10 8 11 34 50 29 17 36
+Silly score: 4
+Jilly delete 20:  10 8 11 34 50 29 17 36
+Jilly score: 20
+Killy delete 10:  8 11 34 50 29 17 36
+Killy score: 10
+Dealer insert 27:  8 11 34 50 29 17 36 27
+Dealer insert 13:  8 11 34 50 29 17 36 27 13
+Dealer insert 18:  8 11 34 50 29 17 36 27 13 18
+Jammy delete 8:  11 34 50 29 17 36 27 13 18
+Jammy score: 8
+Billy delete 11:  34 50 29 17 36 27 13 18
+Billy score: 11
+Jilly delete 34:  50 29 17 36 27 13 18
+Jilly score: 54
+Jilly reaches the target score: 54 (50)
+Killy delete 50:  29 17 36 27 13 18
+Killy score: 60
+Jammy delete 29:  17 36 27 13 18
+Jammy score: 37
+Dealer insert 34:  17 36 27 13 18 34
+End of game 2 detected
+Winner Jilly with score 54
